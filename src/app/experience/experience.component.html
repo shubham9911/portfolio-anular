@@ -1,0 +1,26 @@
+<div
+  class="min-h-screen bg-black text-white flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+>
+  <div class="max-w-3xl w-full space-y-8">
+    <h2 class="text-center text-3xl font-extrabold text-white mb-6">
+      <span class="font-thin">My </span
+      ><span class="font-bold">Experience</span>
+    </h2>
+
+    <!-- Experience Card -->
+    <div
+      class="bg-gray-800 rounded-lg shadow-lg p-6 mb-6"
+      *ngFor="let item of experienceItems"
+    >
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <span class="text-xl font-semibold">{{ item.heading }}</span>
+        </div>
+        <span class="text-sm text-gray-400">{{ item.duration }}</span>
+      </div>
+      <p class="mt-4 text-gray-300">
+        {{ item.description }}
+      </p>
+    </div>
+  </div>
+</div>
