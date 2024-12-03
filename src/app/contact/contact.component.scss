@@ -22,3 +22,8 @@
     border-color: transparent;
   }
 }
+
+:host::ng-deep.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #3b3b3b !important;
+}
